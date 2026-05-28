@@ -15,6 +15,13 @@ function playCraps() {
     // Math.floor rounds down, then +1 makes it 1 to 6
     var die1 = Math.floor(Math.random() * 6) + 1;
     var die2 = Math.floor(Math.random() * 6) + 1;
+
+    // Debug lines - add these temporarily
+    console.log("Die1: " + die1);
+    console.log("Die2: " + die2);
+    console.log("Are they doubles? " + (die1 == die2));
+    console.log("die1 % 2 = " + (die1 % 2));
+    console.log("Condition check (doubles AND odd): " + (die1 == die2 && die1 % 2 == 1));
     
     // Calculate the sum of both dice
     var sum = die1 + die2;
