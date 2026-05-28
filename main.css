@@ -1,10 +1,10 @@
 /* Robert - CSC102 Assignment 2.2 - 05/29/2026 */
 /* This stylesheet controls the look of all pages */
 
-/* Body properties - background and text color */
+/* Body properties - clean business background and text color */
 body {
-    background-color: #f4f4f4;
-    color: #333333;
+    background-color: #f5f5f5;  /* off-white, easy on the eyes */
+    color: #222222;              /* dark gray text for readability */
 }
 
 /* Navigation panel - fixed width sidebar on the left */
