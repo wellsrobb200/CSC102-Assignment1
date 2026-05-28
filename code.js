@@ -33,8 +33,8 @@ function playCraps() {
     } 
     // Check for winning condition: dice are equal (doubles) AND die1 is even
     // die1 % 2 == 0 means the number divided by 2 has no remainder (even number)
-    else if (die1 == die2 && die1 % 2 == 0) {
-        outcomeMessage = "🏆 You won! Doubles with even numbers! 🏆";
+    else if (die1 == die2 && die1 % 2 == 1) {
+    outcomeMessage = "🏆 You won! Doubles with odd numbers! 🏆";
     } 
     // Otherwise, it's a push (neither win nor lose)
     else {
