@@ -1,0 +1,51 @@
+<!-- Robert - CSC102 Assignment 2.3 - 05/29/2026 -->
+<!-- This is the main game page for Quarks Casino Craps -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Quarks Casino - Craps</title>
+      <!-- Link to external CSS for styling -->
+      <link rel="stylesheet" href="main.css">
+      <!-- Link to external JavaScript file -->
+      <script src="code.js"></script>
+   </head>
+   <body>
+      <!-- Header section with page title -->
+      <header>
+         <h1>🎲 Quarks Casino - Craps 🎲</h1>
+      </header>
+      
+      <!-- Navigation section - links to other pages -->
+      <nav>
+         <h2>Navigation</h2>
+         <a href="./index.html">Home</a><br>
+         <a href="./boards.html">Boards</a><br>
+         <a href="./game.html">Play Craps</a><br>
+      </nav>
+      
+      <!-- Main game content area -->
+      <h2>Test Your Luck!</h2>
+      <p>Rules: Roll two dice. If sum is 7 or 11, you lose (CRAPS).<br>
+         If you roll doubles AND the dice are even, you win!<br>
+         Otherwise, you push (try again).</p>
+      
+      <!-- Form with submit button - NO event listeners, just form submit -->
+      <form id="crapsForm" onsubmit="return false;">
+         <!-- Button to play the game - calls the playCraps function when clicked -->
+         <input type="submit" value="🎲 Roll the Dice 🎲" onclick="playCraps();">
+      </form>
+      
+      <!-- This div will display the results of the game -->
+      <div id="gameResult">
+         <p>Click the button above to roll the dice!</p>
+      </div>
+      
+      <!-- Footer section with UAT info -->
+      <footer>
+         Robert Wells<br>
+         University of Advancing Technology<br>
+         2625 W. Baseline Rd.<br>
+         Tempe, AZ 85283<br>
+      </footer>
+   </body>
+</html>
